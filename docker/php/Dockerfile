@@ -7,8 +7,10 @@ COPY ./docker/php/php.ini /usr/local/etc/php/php.ini
 COPY --from=composer:2.1.5 /usr/bin/composer /usr/bin/composer
 
 # install Node.js
-COPY --from=node:16.7.0 /usr/local/bin /usr/local/bin
-COPY --from=node:16.7.0 /usr/local/lib /usr/local/lib
+RUN apk add --no-cache --virtual g++
+RUN apk add --no-cache libstdc++ && apk add --no-cache libgcc
+COPY --from=node:16.7.0-alpine /usr/local/bin /usr/local/bin
+COPY --from=node:16.7.0-alpine /usr/local/lib /usr/local/lib
 
 RUN apk update \
     && apk add \
