@@ -1,0 +1,2 @@
+# laravel_vue
+Laravelとvueのベースをdockerで動かすやつ
