@@ -114,7 +114,7 @@ OSはすべてAlpineLinux （軽量化というクールな選択に乗っかる
     Migrating: 2019_12_14_000001_create_personal_access_tokens_table
     Migrated:  2019_12_14_000001_create_personal_access_tokens_table (46.82ms)
     ```
-4. Laravel-UIのインストール
+4. Laravel-UIのインストール  
    モダンなフロントエンドフレームワークを使う意思表示をLaravelに対して行う  
     ```
     composer require laravel/ui
