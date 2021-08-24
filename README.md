@@ -99,7 +99,7 @@ OSはすべてAlpineLinux （軽量化というクールな選択に乗っかる
     % php artisan -v
     Laravel Framework 8.55.0
     ```
-3. migrateを実行して、とりあえずDBの接続がOKか確認する
+3. migrateを実行して、とりあえずDBの接続がOKか確認する  
    デフォルトで入っているmigrationsを使って、`docker-compose.yaml`で書いたターゲットに登録されるか見る  
    以下のような結果になったらおｋ、エラーになったら接続情報が間違ってる可能性
     ```
@@ -210,7 +210,7 @@ https://qiita.com/minato-naka/items/2d2def4d66ec88dc3ca2
 * Laravel8でVue 3を使う  
 https://reffect.co.jp/laravel/laravel8-vue3
 
-* Vuetify 3 Alpha
+* Vuetify 3 Alpha  
 https://next.vuetifyjs.com/ja/getting-started/installation/
 
 * はじめてのTypeScript入門  
